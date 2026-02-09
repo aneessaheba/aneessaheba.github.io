@@ -17,6 +17,41 @@ body {
   background: #0a0a0f;
   color: #ffffff;
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode styles */
+body:not(.dark) {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+  color: #1e293b;
+}
+
+body:not(.dark) .glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.dark) ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+body:not(.dark) ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6366f1, #8b5cf6);
+}
+
+body:not(.dark) .gradient-bg {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%);
+}
+
+body:not(.dark) .text-gray-300,
+body:not(.dark) .text-gray-400 {
+  color: #1e293b !important;
+}
+
+body:not(.dark) .text-white,
+body:not(.dark) svg {
+  color: #1e293b !important;
 }
 
 h1, h2, h3, h4, h5, h6 {

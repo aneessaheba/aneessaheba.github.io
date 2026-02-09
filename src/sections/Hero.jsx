@@ -1,8 +1,11 @@
-import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Youtube, FileDown, Code2 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Github, Linkedin, Mail, Youtube, FileText, Code2, X, Download } from 'lucide-react';
 import { personalInfo } from '../data/personalInfo';
+import { useState } from 'react';
 
 const Hero = () => {
+  const [showResume, setShowResume] = useState(false);
+
   const socialLinks = [
     { icon: Github, url: personalInfo.github, label: 'GitHub' },
     { icon: Linkedin, url: personalInfo.linkedin, label: 'LinkedIn' },
@@ -31,7 +34,7 @@ const Hero = () => {
               className="mb-4"
             >
               <span className="px-4 py-2 rounded-full glass text-sm font-medium">
-                Welcome to my portfolio 👋
+                Welcome to my portfolio
               </span>
             </motion.div>
 
@@ -70,24 +73,29 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap gap-4 mb-8"
             >
-              
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setShowResume(true)}
                 className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
               >
-                <FileDown className="w-5 h-5" />
-                Resume
-              </a>
-              
-                href={personalInfo.github}
-                target="_blank"
-                rel="noopener noreferrer"
+                <FileText className="w-5 h-5" />
+                View Resume
+              </button>
+              <button
+                onClick={() => {
+                  const element = document.getElementById('projects');
+                  if (element) {
+                    const offsetTop = element.offsetTop - 80;
+                    window.scrollTo({
+                      top: offsetTop,
+                      behavior: 'smooth',
+                    });
+                  }
+                }}
                 className="px-6 py-3 rounded-full glass font-medium hover:bg-white/10 transition-colors flex items-center gap-2"
               >
                 <Code2 className="w-5 h-5" />
                 View Projects
-              </a>
+              </button>
             </motion.div>
 
             <motion.div
@@ -131,7 +139,7 @@ const Hero = () => {
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden glass p-2">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                   <img
-                    src="/profile.jpg"
+                    src="/profile.jpeg"
                     alt="Anees Saheba Guddi"
                     className="w-full h-full object-cover rounded-full"
                     onError={(e) => {
@@ -148,6 +156,56 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
+
+      {/* Resume Modal */}
+      <AnimatePresence>
+        {showResume && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowResume(false)}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-5xl h-[90vh] bg-gray-900 rounded-2xl shadow-2xl overflow-hidden"
+            >
+              {/* Header */}
+              <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between p-4 bg-gradient-to-b from-gray-900 to-transparent">
+                <h3 className="text-xl font-display font-bold text-white">Resume</h3>
+                <div className="flex gap-2">
+                  <a
+                    href="/resume.pdf"
+                    download="Anees_Saheba_Guddi_Resume.pdf"
+                    className="p-2 rounded-lg glass hover:bg-white/20 transition-colors"
+                    title="Download Resume"
+                  >
+                    <Download className="w-5 h-5 text-white" />
+                  </a>
+                  <button
+                    onClick={() => setShowResume(false)}
+                    className="p-2 rounded-lg glass hover:bg-white/20 transition-colors"
+                    title="Close"
+                  >
+                    <X className="w-5 h-5 text-white" />
+                  </button>
+                </div>
+              </div>
+
+              {/* PDF Viewer */}
+              <iframe
+                src="/resume.pdf"
+                className="w-full h-full"
+                title="Resume"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

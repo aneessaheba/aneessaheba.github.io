@@ -114,10 +114,10 @@ const Contact = () => {
               Let's Build Something <span className="gradient-text">Amazing Together</span>
             </h3>
             <p className="text-lg text-gray-300 mb-8">
-              Whether you have a project in mind, want to collaborate, or just want to say hi, 
+              Whether you have a project in mind, want to collaborate, or just want to say hi,
               I'd love to hear from you!
             </p>
-            
+            <a
               href={`mailto:${personalInfo.email}`}
               className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-display font-bold text-lg hover:opacity-90 transition-opacity"
             >

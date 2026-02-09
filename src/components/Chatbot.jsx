@@ -151,21 +151,28 @@ const Chatbot = () => {
 
   return (
     <>
-      <motion.button
+      <motion.div
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-24 right-6 z-50 p-4 rounded-full glass glow cursor-pointer"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        className="fixed top-24 right-6 z-50 cursor-pointer"
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
       >
         {isOpen ? (
-          <X className="w-6 h-6 text-white" />
+          <div className="glass px-6 py-3 rounded-full flex items-center gap-3 glow">
+            <X className="w-5 h-5 text-white" />
+            <span className="text-white font-medium">Close AI Agent</span>
+          </div>
         ) : (
-          <MessageCircle className="w-6 h-6 text-white" />
+          <div className="glass px-6 py-3 rounded-full flex items-center gap-3 glow">
+            <Sparkles className="w-5 h-5 text-primary" />
+            <span className="text-gray-300 font-medium">Ask my AI agent about me</span>
+            <MessageCircle className="w-5 h-5 text-secondary" />
+          </div>
         )}
-      </motion.button>
+      </motion.div>
 
       <AnimatePresence>
         {isOpen && (
