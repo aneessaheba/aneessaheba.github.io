@@ -1,0 +1,144 @@
+{
+  "personalInfo": {
+    "name": "Anees Saheba Guddi",
+    "title": "Generative AI & LLMs | Distributed Systems | Data Engineering",
+    "currentRole": "MS in Applied Data Intelligence @ San José State University",
+    "location": "San Jose, California",
+    "email": "aneessaheba.guddi@sjsu.edu",
+    "github": "https://github.com/aneessaheba",
+    "linkedin": "https://www.linkedin.com/in/anees-saheba-guddi-215a97248/",
+    "youtube": "https://www.youtube.com/@BytAByte",
+    "leetcode": "https://leetcode.com/u/aneessaheba04/",
+    "medium": "https://medium.com/@aneessaheba.guddi",
+    "tableau": "https://public.tableau.com/app/profile/anees.saheba.guddi/vizzes"
+  },
+  "about": {
+    "summary": "MS in Applied Data Intelligence student at San José State University (2025–2027) specializing in Generative AI, LLM Fine-tuning, and Machine Learning Model Development. Architects intelligent systems that combine cutting-edge AI capabilities with production-grade software engineering.",
+    "expertise": "Full machine learning lifecycle: designing and training neural networks from scratch, fine-tuning foundation models for domain-specific tasks, architecting LLM-based agentic systems with LangChain and LangGraph, and deploying scalable microservices."
+  },
+  "currentlyWorkingOn": [
+    "Building production-ready agentic AI systems with LangChain, LangGraph, and multi-tool orchestration",
+    "Exploring MLOps workflows, LLM fine-tuning techniques, and distributed machine learning training",
+    "Deepening knowledge in scalable data platforms and real-time streaming architectures",
+    "Contributing to open-source AI/ML projects and sharing insights through technical writing",
+    "Creating educational content on Gen AI and Data Engineering on Medium and YouTube"
+  ],
+  "education": [
+    {
+      "institution": "San José State University",
+      "degree": "Master of Science in Applied Data Intelligence",
+      "period": "Jan 2025 – May 2027",
+      "gpa": "3.5/4.0",
+      "location": "San Jose, CA, USA",
+      "coursework": "Gen AI LLMs, Agentic AI, Machine Learning, Deep Learning, Big Data Algorithms, Distributed Systems, Scalable Data Platforms"
+    },
+    {
+      "institution": "Visvesvaraya Technological University",
+      "degree": "Bachelor of Engineering in Information Science and Engineering",
+      "period": "Aug 2019 – Jun 2023",
+      "gpa": "7.9/10.0",
+      "location": "Karnataka, India",
+      "coursework": "Data Structures and Algorithms, Database Systems, Software Engineering"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Hewlett Packard (HP)",
+      "role": "Software Development Engineer",
+      "period": "Jul 2023 – Aug 2024",
+      "location": "Bengaluru, India",
+      "responsibilities": [
+        "Implemented rule-based chatbots for Printer Customer Support",
+        "Prepared and organized data from customer support transcripts",
+        "Performed text cleaning and keyword extraction",
+        "Built decision-based conversation flows",
+        "Integrated chatbot logic with backend APIs",
+        "Explored early LLM tools for response improvements"
+      ]
+    },
+    {
+      "company": "Pheuna Technology",
+      "role": "Software Engineer Intern",
+      "period": "May 2022 – Aug 2022",
+      "location": "Bengaluru, India",
+      "responsibilities": [
+        "Designed RESTful APIs using Node.js and Express",
+        "Implemented Kafka producers and consumers",
+        "Built cross-platform mobile dashboard using React and Ionic"
+      ]
+    }
+  ],
+  "featuredProjects": [
+    {
+      "name": "Distributed Kayak Travel Booking System",
+      "tech": ["FastAPI", "Kafka", "MySQL", "MongoDB", "Redis"],
+      "description": "Built a distributed travel booking system supporting search, booking, billing, and analytics. Developed AI-powered recommendation service.",
+      "github": "https://github.com/aneessaheba/kayak-distributed-system"
+    },
+    {
+      "name": "Airbnb Prototype with Agentic AI",
+      "tech": ["LangChain", "FastAPI", "React", "MySQL"],
+      "description": "Built full-stack platform with Agentic AI Concierge using LangChain for personalized travel plans.",
+      "github": "https://github.com/aneessaheba/airbnb-agentic-ai"
+    },
+    {
+      "name": "Multi-Agent Blog System",
+      "tech": ["Ollama", "Docker", "AWS ECS", "HTML/CSS/JS"],
+      "description": "Multi-agent workflow using Ollama LLMs for automated blog content creation.",
+      "github": "https://github.com/aneessaheba/ollama-agentic-ai"
+    },
+    {
+      "name": "Stock Data ETL & Data Warehouse Pipeline",
+      "tech": ["PostgreSQL", "Docker", "ETL", "Dimensional Modeling"],
+      "description": "ETL pipeline for stock market data with dimensional data warehouse in PostgreSQL.",
+      "github": "https://github.com/aneessaheba/StockMarketETL"
+    }
+  ],
+  "skills": {
+    "GenAI_LLMs": [
+      "Gen AI APIs", "Prompt Engineering", "LangChain", "LangGraph", "Tool Calling",
+      "RAG", "Vector Databases", "OpenAI", "Google Gemini", "HuggingFace",
+      "Fine-tuning", "LoRA", "Ollama"
+    ],
+    "ML_DL": [
+      "Model Training", "Supervised Learning", "Unsupervised Learning", "Neural Networks",
+      "CNN", "RNN", "Transfer Learning", "Feature Engineering", "PyTorch",
+      "TensorFlow", "scikit-learn", "Keras"
+    ],
+    "Programming": [
+      "Python", "SQL", "NumPy", "Pandas", "FastAPI", "Streamlit", "Flask",
+      "Node.js", "Express", "React", "HTML5", "CSS3", "JavaScript"
+    ],
+    "Data_Cloud": [
+      "PostgreSQL", "MySQL", "MongoDB", "Redis", "SQLite", "DuckDB",
+      "Docker", "AWS", "AWS SageMaker", "Amazon S3", "Amazon EC2", "AWS ECS"
+    ]
+  },
+  "faq": [
+    {
+      "question": "What is Anees currently working on?",
+      "answer": "Anees is currently building production-ready agentic AI systems with LangChain and LangGraph, exploring MLOps workflows and LLM fine-tuning techniques, deepening knowledge in scalable data platforms, contributing to open-source AI/ML projects, and creating educational content on Gen AI and Data Engineering on Medium and YouTube.",
+      "source": "About"
+    },
+    {
+      "question": "Tell me about her HP experience",
+      "answer": "At HP (Jul 2023 – Aug 2024), Anees worked as a Software Development Engineer implementing rule-based chatbots for Printer Customer Support. She prepared data from customer support transcripts, performed text cleaning and keyword extraction, built decision-based conversation flows, integrated chatbot logic with backend APIs, and explored early LLM tools for response improvements.",
+      "source": "Experience"
+    },
+    {
+      "question": "Which projects use LangChain?",
+      "answer": "Anees has 2 projects using LangChain: Airbnb Prototype with Agentic AI (designed an Agentic AI Concierge using LangChain to generate personalized travel plans) and Career Counseling Agent (AI-powered career planning assistant built with Streamlit, Gemini, and LangChain).",
+      "source": "Projects"
+    },
+    {
+      "question": "What is her education and GPA?",
+      "answer": "Anees is currently pursuing a Master of Science in Applied Data Intelligence at San José State University (Jan 2025 – May 2027) with a GPA of 3.5/4.0. She completed her Bachelor of Engineering in Information Science and Engineering from Visvesvaraya Technological University (Aug 2019 – Jun 2023) with a GPA of 7.9/10.0.",
+      "source": "Education"
+    },
+    {
+      "question": "What are her main skills?",
+      "answer": "Anees specializes in Generative AI & LLMs (LangChain, LangGraph, RAG, Vector Databases, Prompt Engineering), Machine Learning & Deep Learning (PyTorch, TensorFlow, Neural Networks), Programming (Python, SQL, FastAPI, React), and Data & Cloud Systems (AWS, PostgreSQL, MongoDB, Docker). She has expertise in 70+ technologies across these domains.",
+      "source": "Skills"
+    }
+  ]
+}
