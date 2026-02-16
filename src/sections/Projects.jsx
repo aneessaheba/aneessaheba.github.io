@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
-import { Github, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { useRef } from 'react';
+import { Github, ExternalLink } from 'lucide-react';
 import {
   featuredProjects,
   genAIProjects,
@@ -14,8 +14,6 @@ import { personalInfo } from '../data/personalInfo';
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [showMore, setShowMore] = useState(false);
-
   return (
     <section id="projects" className="min-h-screen py-20 relative" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,26 +74,7 @@ const Projects = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <div className="flex items-center justify-center mb-8">
-            <button
-              onClick={() => setShowMore(!showMore)}
-              className="flex items-center gap-2 px-6 py-3 rounded-full glass hover:bg-white/10 transition-all duration-300"
-            >
-              <span className="font-display font-bold">
-                {showMore ? 'Show Less' : 'View More Projects'}
-              </span>
-              {showMore ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-            </button>
-          </div>
-
-          {showMore && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: 'auto' }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.5 }}
-              className="space-y-12"
-            >
+          <div className="space-y-12">
               {/* Generative AI & Agentic Systems */}
               <div>
                 <h3 className="text-2xl font-display font-bold mb-6 gradient-text">
@@ -271,8 +250,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </motion.div>
-          )}
+          </div>
         </motion.div>
 
         <motion.div
