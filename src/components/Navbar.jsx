@@ -105,7 +105,7 @@ const Navbar = () => {
               {isDarkMode ? (
                 <Sun className="w-5 h-5 text-yellow-400" />
               ) : (
-                <Moon className="w-5 h-5 text-indigo-600" />
+                <Moon className="w-5 h-5 text-indigo-500" />
               )}
             </motion.button>
           </div>
@@ -123,7 +123,7 @@ const Navbar = () => {
               {isDarkMode ? (
                 <Sun className="w-5 h-5 text-yellow-400" />
               ) : (
-                <Moon className="w-5 h-5 text-indigo-600" />
+                <Moon className="w-5 h-5 text-indigo-500" />
               )}
             </motion.button>
 

@@ -25,7 +25,7 @@ export const featuredProjects = [
     description: "Built an ETL pipeline for stock market data using Python, integrating multiple sources and automating data ingestion. Designed a dimensional data warehouse in PostgreSQL for structured financial analysis and reporting. Implemented Dockerized workflows.",
     tech: ["PostgreSQL", "Docker", "ETL", "Dimensional Modeling"],
     github: "https://github.com/aneessaheba/StockMarketETL",
-    gradient: "from-orange-500 to-red-500"
+    gradient: "from-yellow-500 to-orange-500"
   }
 ];
 
