@@ -9,10 +9,12 @@ import Stats from './sections/Stats';
 import Contact from './sections/Contact';
 import Chatbot from './components/Chatbot';
 import BackToTop from './components/BackToTop';
+import CursorGlow from './components/CursorGlow';
 
 function App() {
   return (
     <div className="gradient-bg min-h-screen">
+      <CursorGlow />
       <Navbar />
       <Hero />
       <About />

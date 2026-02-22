@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['Syne', 'sans-serif'],
-        'body': ['DM Sans', 'sans-serif'],
+        'display': ['Space Grotesk', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
       },
       colors: {
         'primary': '#6366f1',

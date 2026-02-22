@@ -73,29 +73,30 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="flex flex-wrap gap-4 mb-8"
             >
-              <button
+              <motion.button
                 onClick={() => setShowResume(true)}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition-opacity flex items-center gap-2"
+                whileHover={{ scale: 1.07, y: -3 }}
+                whileTap={{ scale: 0.96 }}
+                className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium flex items-center gap-2 shadow-lg shadow-primary/30 hover:shadow-primary/60 transition-shadow"
               >
                 <FileText className="w-5 h-5" />
                 View Resume
-              </button>
-              <button
+              </motion.button>
+              <motion.button
                 onClick={() => {
                   const element = document.getElementById('projects');
                   if (element) {
                     const offsetTop = element.offsetTop - 80;
-                    window.scrollTo({
-                      top: offsetTop,
-                      behavior: 'smooth',
-                    });
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
                   }
                 }}
-                className="px-6 py-3 rounded-full glass font-medium hover:bg-white/10 transition-colors flex items-center gap-2"
+                whileHover={{ scale: 1.07, y: -3 }}
+                whileTap={{ scale: 0.96 }}
+                className="px-6 py-3 rounded-full glass font-medium flex items-center gap-2"
               >
                 <Code2 className="w-5 h-5" />
                 View Projects
-              </button>
+              </motion.button>
             </motion.div>
 
             <motion.div
@@ -112,9 +113,9 @@ const Hero = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    whileHover={{ scale: 1.1, y: -5 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="p-3 rounded-full glass hover:bg-white/10 transition-colors"
+                    whileHover={{ scale: 1.2, y: -6, rotate: 8 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="p-3 rounded-full glass hover:border-primary/60 transition-colors"
                     aria-label={link.label}
                   >
                     <Icon className="w-5 h-5" />

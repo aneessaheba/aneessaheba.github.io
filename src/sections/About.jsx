@@ -65,20 +65,20 @@ const About = () => {
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              I architect intelligent systems that combine cutting-edge AI capabilities with production-grade 
-              software engineering—from fine-tuning large language models and training deep learning networks 
+              I architect intelligent systems that combine cutting-edge AI capabilities with production-grade
+              software engineering—from fine-tuning large language models and training deep learning networks
               to building agentic workflows and distributed architectures.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              My expertise spans the full machine learning lifecycle: designing and training neural networks 
-              from scratch, fine-tuning foundation models for domain-specific tasks, architecting LLM-based 
+              My expertise spans the full machine learning lifecycle: designing and training neural networks
+              from scratch, fine-tuning foundation models for domain-specific tasks, architecting LLM-based
               agentic systems with LangChain and LangGraph, and deploying scalable microservices.
             </p>
 
             <p className="text-lg text-gray-300 leading-relaxed">
-              With professional experience as a Software Development Engineer at HP Inc., I bring hands-on 
-              knowledge in building production AI systems, distributed data pipelines, and intelligent 
+              With professional experience as a Software Development Engineer at HP Inc., I bring hands-on
+              knowledge in building production AI systems, distributed data pipelines, and intelligent
               automation solutions.
             </p>
           </motion.div>

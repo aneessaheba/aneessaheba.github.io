@@ -34,9 +34,10 @@ const Projects = () => {
               key={idx}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="glass p-6 rounded-2xl hover:bg-white/10 transition-all duration-300"
+              transition={{ duration: 0.6, delay: idx * 0.1, type: 'spring', stiffness: 300, damping: 20 }}
+              whileHover={{ y: -12, scale: 1.02, rotateX: 2, rotateY: -2 }}
+              style={{ transformStyle: 'preserve-3d' }}
+              className="glass p-6 rounded-2xl transition-all duration-300 cursor-pointer"
             >
               <div className={`h-2 w-full bg-gradient-to-r ${project.gradient} rounded-t-2xl mb-4`}></div>
               
