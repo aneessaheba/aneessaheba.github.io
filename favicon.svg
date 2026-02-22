@@ -1,44 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <defs>
-    <radialGradient id="outerGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="60%" stop-color="#000000" stop-opacity="1"/>
-      <stop offset="80%" stop-color="#cc44ff" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
-    </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <!-- Black background -->
-  <rect width="100" height="100" fill="#000000"/>
-
-  <!-- Outer purple glow halo -->
-  <circle cx="50" cy="50" r="38" fill="none" stroke="#cc44ff" stroke-width="10" opacity="0.35" filter="url(#softGlow)"/>
-
-  <!-- Cyan ring -->
-  <circle cx="50" cy="50" r="36" fill="#050510" stroke="#00ccff" stroke-width="2.5" filter="url(#glow)"/>
-
-  <!-- White A letter -->
-  <text
-    x="50"
-    y="68"
-    text-anchor="middle"
-    font-family="'Space Grotesk', Arial, sans-serif"
-    font-size="52"
-    font-weight="700"
-    fill="white"
-    filter="url(#glow)"
-  >A</text>
+  <rect width="32" height="32" rx="6" fill="#000000"/>
+  <!-- Purple outer glow ring -->
+  <circle cx="16" cy="16" r="13" fill="none" stroke="#cc44ff" stroke-width="1.5" opacity="0.7"/>
+  <!-- Cyan inner ring -->
+  <circle cx="16" cy="16" r="11" fill="#05050f" stroke="#00ccff" stroke-width="1.2" opacity="0.9"/>
+  <!-- White A -->
+  <text x="16" y="21.5" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="white">A</text>
 </svg>
