@@ -184,7 +184,7 @@ const Chatbot = () => {
             exit={{ opacity: 0, scale: 0.8, y: -100 }}
             className="fixed top-40 right-6 z-40 w-96 h-[500px] glass rounded-2xl shadow-2xl overflow-hidden flex flex-col"
           >
-            <div className="bg-gradient-to-r from-primary to-secondary p-4">
+            <div className="bg-white/10 border-b border-white/10 p-4">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-white" />
                 <h3 className="font-display font-bold text-white">Ask About Anees</h3>
@@ -202,7 +202,7 @@ const Chatbot = () => {
                   <div
                     className={`max-w-[80%] p-3 rounded-2xl ${
                       msg.role === 'user'
-                        ? 'bg-gradient-to-r from-primary to-secondary text-white'
+                        ? 'bg-white text-black'
                         : 'bg-white/10 text-white'
                     }`}
                   >
@@ -245,9 +245,9 @@ const Chatbot = () => {
                 />
                 <button
                   onClick={handleSend}
-                  className="p-2 rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-80 transition-opacity"
+                  className="p-2 rounded-full bg-white hover:opacity-80 transition-opacity"
                 >
-                  <Send className="w-5 h-5 text-white" />
+                  <Send className="w-5 h-5 text-black" />
                 </button>
               </div>
             </div>

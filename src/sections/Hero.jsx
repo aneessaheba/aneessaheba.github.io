@@ -77,7 +77,7 @@ const Hero = () => {
                 onClick={() => setShowResume(true)}
                 whileHover={{ scale: 1.07, y: -3 }}
                 whileTap={{ scale: 0.96 }}
-                className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium flex items-center gap-2 shadow-lg shadow-primary/30 hover:shadow-primary/60 transition-shadow"
+                className="px-6 py-3 rounded-full bg-white text-black font-medium flex items-center gap-2 shadow-lg shadow-white/20 hover:shadow-white/40 transition-shadow"
               >
                 <FileText className="w-5 h-5" />
                 View Resume

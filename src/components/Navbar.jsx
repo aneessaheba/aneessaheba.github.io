@@ -86,7 +86,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection(item.id)}
                 className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'bg-gradient-to-r from-primary to-secondary text-white'
+                    ? 'bg-white text-black'
                     : 'text-gray-300 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -156,7 +156,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection(item.id)}
                 className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'bg-gradient-to-r from-primary to-secondary text-white'
+                    ? 'bg-white text-black'
                     : 'text-gray-300 hover:text-white hover:bg-white/10'
                 }`}
               >

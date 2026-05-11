@@ -119,7 +119,7 @@ const Contact = () => {
             </p>
             <a
               href={`mailto:${personalInfo.email}`}
-              className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-display font-bold text-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-8 py-4 rounded-full bg-white text-black font-display font-bold text-lg hover:opacity-80 transition-opacity"
             >
               Send Me an Email
             </a>
