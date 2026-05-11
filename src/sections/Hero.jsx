@@ -136,9 +136,14 @@ const Hero = () => {
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-white rounded-full blur-3xl opacity-30"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden glass p-2">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+              {/* Outer wide bloom */}
+              <div className="absolute -inset-8 bg-white rounded-full blur-3xl opacity-25"></div>
+              {/* Mid glow ring */}
+              <div className="absolute -inset-4 bg-white rounded-full blur-2xl opacity-40"></div>
+              {/* Tight bright halo */}
+              <div className="absolute -inset-1 bg-white rounded-full blur-md opacity-70"></div>
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden p-[3px]" style={{boxShadow: '0 0 40px 10px rgba(255,255,255,0.6), 0 0 80px 20px rgba(255,255,255,0.3), 0 0 140px 40px rgba(255,255,255,0.12)'}}>
+                <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
                   <img
                     src="/profile.jpeg"
                     alt="Anees Saheba Guddi"
