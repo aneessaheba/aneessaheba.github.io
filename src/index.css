@@ -91,9 +91,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glass:hover {
-  border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 0 24px rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.18), 0 0 60px rgba(255, 255, 255, 0.08);
 }
 
 /* Animated gradient text */
@@ -125,15 +125,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Glow effect */
 .glow {
   box-shadow:
-    0 0 30px rgba(255, 255, 255, 0.15),
-    0 0 60px rgba(255, 255, 255, 0.08),
-    0 0 100px rgba(255, 255, 255, 0.04);
+    0 0 30px rgba(255, 255, 255, 0.50),
+    0 0 70px rgba(255, 255, 255, 0.25),
+    0 0 120px rgba(255, 255, 255, 0.12);
 }
 
 /* Pulse animation */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.10); }
-  50%       { box-shadow: 0 0 50px rgba(255, 255, 255, 0.25); }
+  0%, 100% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.30); }
+  50%       { box-shadow: 0 0 80px rgba(255, 255, 255, 0.70); }
 }
 
 .pulse-glow {
@@ -156,8 +156,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.02) 40%,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.07) 40%,
     transparent 70%
   );
   transform: translate(-50%, -50%);
