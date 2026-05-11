@@ -11,9 +11,9 @@ export default {
         'body': ['Inter', 'sans-serif'],
       },
       colors: {
-        'primary': '#6366f1',
-        'secondary': '#8b5cf6',
-        'accent': '#ec4899',
+        'primary': '#f04e2a',
+        'secondary': '#ff6b35',
+        'accent': '#e83318',
       },
     },
   },
