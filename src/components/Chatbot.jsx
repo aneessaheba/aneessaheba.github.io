@@ -176,6 +176,8 @@ const Chatbot = () => {
 
       <AnimatePresence>
         {isOpen && (
+          <>
+          <div className="fixed inset-0 z-39" onClick={() => setIsOpen(false)} />
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: -100 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -250,6 +252,7 @@ const Chatbot = () => {
               </div>
             </div>
           </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>
