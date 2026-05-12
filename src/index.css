@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Animated gradient text */
 .gradient-text {
-  background: linear-gradient(90deg, #ffffff, #888888, #ffffff);
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899, #6366f1);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
