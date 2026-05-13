@@ -177,14 +177,14 @@ const Chatbot = () => {
       <AnimatePresence>
         {isOpen && (
           <>
-          <div className="fixed inset-0 z-39" onClick={() => setIsOpen(false)} />
+          <div className="fixed inset-0 z-[39]" onClick={() => setIsOpen(false)} />
           <motion.div
             initial={{ opacity: 0, scale: 0.8, y: -100 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: -100 }}
             className="fixed top-40 right-6 z-40 w-96 h-[500px] glass rounded-2xl shadow-2xl overflow-hidden flex flex-col"
           >
-            <div className="bg-white/10 border-b border-white/10 p-4">
+            <div className="bg-gradient-to-r from-primary to-secondary p-4">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-5 h-5 text-white" />
                 <h3 className="font-display font-bold text-white">Ask About Anees</h3>
@@ -202,7 +202,7 @@ const Chatbot = () => {
                   <div
                     className={`max-w-[80%] p-3 rounded-2xl ${
                       msg.role === 'user'
-                        ? 'bg-white text-black'
+                        ? 'bg-gradient-to-r from-primary to-secondary text-white'
                         : 'bg-white/10 text-white'
                     }`}
                   >
@@ -239,15 +239,15 @@ const Chatbot = () => {
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+                  onKeyDown={(e) => e.key === 'Enter' && handleSend()}
                   placeholder="Ask me anything..."
                   className="flex-1 px-4 py-2 rounded-full bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <button
                   onClick={handleSend}
-                  className="p-2 rounded-full bg-white hover:opacity-80 transition-opacity"
+                  className="p-2 rounded-full bg-gradient-to-r from-primary to-secondary hover:opacity-80 transition-opacity"
                 >
-                  <Send className="w-5 h-5 text-black" />
+                  <Send className="w-5 h-5 text-white" />
                 </button>
               </div>
             </div>
